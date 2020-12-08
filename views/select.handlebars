@@ -9,7 +9,10 @@
 
     {{#data}}
         <tr>
-            <td><a href="deletar"><img src="" alt=""></a></td>
+            <td>
+                <a href="update/{{id}}"><img src="/img/editar.png" alt=""></a>
+                <a href="deletar/{{id}}" class="deletar"><img src="/img/deletar.png" alt=""></a>
+            </td>
             <td>{{id}}</td>
             <td>{{name}}</td>
             <td>{{age}}</td>
@@ -17,3 +20,5 @@
 
 {{/data}}
 </table>
+<br>
+<a href="/">Voltar inicial</a>
